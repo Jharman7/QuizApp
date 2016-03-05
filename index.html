@@ -2,9 +2,18 @@
 <html ng-app="quizApp">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="/public/css/styles.css" media="screen" title="no title" charset="utf-8">
     <title>Quiz!</title>
   </head>
   <body>
+    <div class="container">
+      <header class = "menu">
+        <ul>
+          <li class="navLI"><a ui-sref="home">HOME</a></li>
+        </ul>
+      </header>
+      <div class="view" ui-view></div>
+    </div>
 
 
 
@@ -12,9 +21,8 @@
 
 
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js" charset="utf-8"></script>
-    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8"></script>
     <script src="components/services/quizService.js" charset="utf-8"></script>
     <script src="components/home/homeCtrl.js" charset="utf-8"></script>
